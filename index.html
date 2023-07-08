@@ -1,0 +1,188 @@
+<!-- website reference - https://preview.colorlib.com/#zacson -->
+<!-- Gym website -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saffron Fitness</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<style>
+    /* CSS RESET */
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('images/pic2.jpg');
+        background-size: cover;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid rgb(0, 255, 0); */
+        position: absolute;
+        left: 45px;
+        top: 17px;
+    }
+
+    .left img {
+        width: 109px;
+    }
+
+    .left div {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 60%;
+        margin: 12px auto;
+        padding: 10px 10px 10px 140px;
+        /* border: 2px solid #ff0000; */
+        /* margin: auto; */
+    }
+
+    .navbar {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .navbar li {
+        color: white;
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 30px;
+        transition: font-size 1s;
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        font-size: 30px;
+        color: rgb(211, 207, 207);
+        
+    }
+
+    .right {
+        position: absolute;
+        right: 45px;
+        top: 17px;
+        display: inline-block;
+        border: 2px solid rgb(255, 255, 255);
+        font-size: 20px;
+        background-color: red;
+    }
+
+    .btn {
+        padding: 10px 30px;
+        color: white;
+        background-color: #e75137;
+        border: 2px solid #e75137;
+        font-size: 20px;
+        cursor: pointer;
+        text-align: center;
+        transition: all 0.5s;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .btn span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .btn span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: 20px;
+        transition: 0.5s;
+        color: white;
+    }
+
+    .btn:hover span {
+        padding-right: 25px;
+    }
+
+    .btn:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+    .container1{
+        /* border: 2px solid green; */
+        margin: 150px 50px;
+        padding: 3px;
+        width: 80%;
+        color: #ffffff; 
+        font-size: 50px;
+        -webkit-text-stroke: 1px #f6f7f8;
+        -webkit-text-fill-color: transparent;
+    }
+    .container2{
+        /* border: 2px solid green; */
+        margin: -150px 100px;
+        padding: 3px;
+        width: 80%;
+        color: #ffffff;
+        font-family: 'Oswald', sans-serif;
+        font-size: 130px; 
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 40px;
+    }
+    #my_courses{
+        border: 2px solid rgb(255, 255, 255);
+        font-size: 20px;
+        margin: -83px 41px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- for logo -->
+        <div class="left">
+            <img src="images/pic8.png" alt="">
+            <!-- <div>Saffron Fitness</div> -->
+        </div>
+        <!-- for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">COURSES</a></li>
+                <li><a href="#">PRICING</a></li>
+                <li><a href="#">GALLERY</a></li>
+            </ul>
+        </div>
+        <!-- for contact us button -->
+        <div class="right">
+            <button class="btn"><span> CONTACT US</span></button>
+        </div>
+    </header>
+    <div class="container1">
+        WELCOME TO SAFFRON FITNESS.
+    </div>
+    <div class="container2">
+        FIGHT TO BE FIT.
+    </div>
+    <button class="btn" id="my_courses">
+        <span>
+            My Courses
+        </span>
+    </button>
+</body>
+
+</html>
